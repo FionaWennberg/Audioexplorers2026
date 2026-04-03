@@ -1,0 +1,36 @@
+AUDIO CASE SUMMARY
+==================
+
+Estimated number of talkers: 4
+
+Speaker 0
+  Estimated azimuth: 178.7 deg
+  Mean energy: 0.0721
+  Gender guess: likely female
+  Language guess: unknown
+  Transcript: [transcription unavailable: Model has been downloaded but the SHA256 checksum does not not match. Please retry loading the model.]
+
+Speaker 1
+  Estimated azimuth: -176.9 deg
+  Mean energy: 0.0784
+  Gender guess: likely female
+  Language guess: unknown
+  Transcript: [transcription unavailable: [WinError 2] The system cannot find the file specified]
+
+Speaker 2
+  Estimated azimuth: 120.2 deg
+  Mean energy: 0.0755
+  Gender guess: likely female
+  Language guess: unknown
+  Transcript: [transcription unavailable: [WinError 2] The system cannot find the file specified]
+
+Speaker 3
+  Estimated azimuth: -64.0 deg
+  Mean energy: 0.0705
+  Gender guess: likely female
+  Language guess: unknown
+  Transcript: [transcription unavailable: [WinError 2] The system cannot find the file specified]
+
+Chosen target speaker: 3
+Reason: TARGET_RULE = front_most
+Enhanced file: outputs\enhanced_target.wav
