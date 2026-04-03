@@ -6,6 +6,7 @@ import scipy.signal as sig
 from scipy.fft import rfft, rfftfreq
 from dataclasses import dataclass
 from typing import Dict, List, Tuple, Optional
+from math import sqrt, pi, exp
 
 # Optional packages:
 # pip install librosa matplotlib openai-whisper pyroomacoustics
@@ -103,13 +104,20 @@ def dominant_f0_basic(y: np.ndarray, sr: int, fmin: float = 70, fmax: float = 30
     peak_idx = np.argmax(spectrum[mask])
     return float(freqs[mask][peak_idx])
 
+def normal_pdf(x, mu, sigma):
+    return (1 / (sigma * sqrt(2 * pi))) * exp(-((x - mu) ** 2) / (2 * sigma ** 2))
 
-def guess_gender_from_f0(f0: Optional[float]) -> str:
+def guess_gender_from_f0_likelihood(f0):
     if f0 is None:
         return "unknown"
-    if f0 < 165:
-        return "likely male"
-    return "likely female"
+
+    male_like = normal_pdf(f0, mu=132.5, sigma=23.75)
+    female_like = normal_pdf(f0, mu=210.0, sigma=22.5)
+
+    if male_like > female_like:
+        return f"likely male (Lm={male_like:.4e}, Lf={female_like:.4e})"
+    else:
+        return f"likely female (Lm={male_like:.4e}, Lf={female_like:.4e})"
 
 # ============================================================
 # GCC-PHAT FOR TDOA
