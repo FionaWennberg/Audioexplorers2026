@@ -6,30 +6,30 @@ Estimated number of talkers: 4
 Speaker 0
   Estimated azimuth: 178.7 deg
   Mean energy: 0.0721
-  Gender guess: likely female
-  Language guess: unknown
-  Transcript: [transcription unavailable: Model has been downloaded but the SHA256 checksum does not not match. Please retry loading the model.]
+  Gender guess: likely female (Lm=6.5089e-06, Lf=1.3488e-02)
+  Language guess: en
+  Transcript: I just have a daughter, just a wife only for her little son, that's your badest strategy... you have children, I just behave... how dare you say such behavior? my age of son applies to me, three and ten years ago, and a very light non-Japanese
 
 Speaker 1
-  Estimated azimuth: -176.9 deg
-  Mean energy: 0.0784
-  Gender guess: likely female
-  Language guess: unknown
-  Transcript: [transcription unavailable: [WinError 2] The system cannot find the file specified]
+  Estimated azimuth: -165.8 deg
+  Mean energy: 0.0774
+  Gender guess: likely female (Lm=7.6514e-07, Lf=7.8619e-03)
+  Language guess: en
+  Transcript: Are Chile's kung fu culture really called? I got married to my husband, I have an ojoshis and...
 
 Speaker 2
   Estimated azimuth: 120.2 deg
   Mean energy: 0.0755
-  Gender guess: likely female
-  Language guess: unknown
-  Transcript: [transcription unavailable: [WinError 2] The system cannot find the file specified]
+  Gender guess: likely female (Lm=4.0787e-06, Lf=1.2226e-02)
+  Language guess: en
+  Transcript: five, five, five, five, five, five, five, five, three.
 
 Speaker 3
-  Estimated azimuth: -64.0 deg
-  Mean energy: 0.0705
-  Gender guess: likely female
-  Language guess: unknown
-  Transcript: [transcription unavailable: [WinError 2] The system cannot find the file specified]
+  Estimated azimuth: 1.7 deg
+  Mean energy: 0.0680
+  Gender guess: likely female (Lm=1.9141e-03, Lf=8.1742e-03)
+  Language guess: en
+  Transcript: Yes, I got married there.
 
 Chosen target speaker: 3
 Reason: TARGET_RULE = front_most

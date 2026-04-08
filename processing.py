@@ -107,7 +107,7 @@ def dominant_f0_basic(y: np.ndarray, sr: int, fmin: float = 70, fmax: float = 30
 def normal_pdf(x, mu, sigma):
     return (1 / (sigma * sqrt(2 * pi))) * exp(-((x - mu) ** 2) / (2 * sigma ** 2))
 
-def guess_gender_from_f0_likelihood(f0):
+def guess_gender_from_f0(f0):
     if f0 is None:
         return "unknown"
 
